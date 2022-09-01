@@ -38,7 +38,7 @@ const encryptFile = async () => {
   const options = {
     message : message,
     encryptionKeys: openpgpPublicKey,
-    //signingKeys :  openpgpPrivateKey,
+    //signingKeys :  openpgpPrivateKey
   }; 
 
   const encryptionResponse = await openpgp.encrypt(options);
