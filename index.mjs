@@ -213,7 +213,7 @@ const getTransactions = async(address, numTx) => {
     
 }
 
-//pulling transaction details with signature provided... 
+//pulling transaction details with signature provided.... 
 
 const getTransactionList = async(transactions,address) => {
 
