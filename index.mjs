@@ -213,7 +213,7 @@ const getTransactions = async(address, numTx) => {
     
 }
 
-//pulling transaction details with signature provided... 
+//pulling transaction details with signature provided.. 
 
 const getTransactionList = async(transactions,address) => {
 
@@ -274,7 +274,7 @@ function parseWholeTranList()  {
 
                 if(index !=0 ) {
 
-                    //finding the correct row for the KI info from `HarvestKI line`
+                    //finding the correct row for the KI info from `HarvestKI line`..
                     let parseKIInfo = [];
                     for(let j = index+1 ; transaction.meta.logMessages[j] != null ; j++) {
 
@@ -286,7 +286,7 @@ function parseWholeTranList()  {
                         }
                     }
             
-                    if(parseKIInfo.length > 3) {  //this if is to avoid an edge case where creating a subhabitat will throw array index error.
+                    if(parseKIInfo.length > 3) {  //this if is to avoid an edge case where creating a subhabitat will throw array index error
 
                         //get Energy
                         let energy = parseFloat(parseKIInfo[0].split(`:`)[2]);
